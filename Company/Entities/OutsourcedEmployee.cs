@@ -9,6 +9,7 @@ namespace Company.Entities
     internal class OutsourcedEmployee : Employee
     {
         public double AdditionalCharge { get; set; }
+
         public OutsourcedEmployee()
         {
         }

@@ -28,12 +28,10 @@ namespace Company
                 Console.Write("Value per hour: ");
                 double valueHour = double.Parse(Console.ReadLine());
 
-                double addCharge = 0.0;
-
                 if (test == 'y' || test == 'Y' )
                 {
                     Console.Write("Additional charge: ");
-                    addCharge = double.Parse(Console.ReadLine());
+                    double addCharge = double.Parse(Console.ReadLine());
 
                     OutsourcedEmployee outemployee = new OutsourcedEmployee(name, hours, valueHour, addCharge);
                     employees.Add(outemployee);
